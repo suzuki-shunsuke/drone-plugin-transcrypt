@@ -1,4 +1,4 @@
-FROM debian:9-slim
+FROM debian:11-slim
 COPY decrypt.sh /usr/local/bin/decrypt-transcrypt
 RUN apt-get update -y && \
     apt-get install -y git bsdmainutils && \
